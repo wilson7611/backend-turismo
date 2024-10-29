@@ -16,6 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->string('image_url')->nullable();
+            $table->decimal('latitude', 10, 8)->nullable(); // Latitude
+            $table->decimal('longitude', 11, 8)->nullable(); // Longitude
             $table->foreignId('route_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });

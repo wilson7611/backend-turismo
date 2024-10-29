@@ -10,7 +10,7 @@ class Place extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name', 'description', 'image_url', 'route_id',
+        'name', 'description', 'image_url', 'latitude', 'longitude','route_id',
     ];
 
     public function route()
